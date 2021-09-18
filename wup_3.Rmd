@@ -42,22 +42,31 @@ basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='e
 
 This fancy box plot shows the significant difference between the alcohol consumption of the back row and the middle row, along with showing the difference between the back row and the front row's alcohol consumption.
 
+
+
 ## Numerical Summarys 
 
 ```{r}
 favstats(alcohol~Seat,data=ucdavis1)
 ```
 
+
+
 Based on this chart, the back row has 8.5 more than the middle or front rows per week. The middle row is shown to drink 3.3 drinks per week and the front row has 1.7 drinks per week. However it's likely that the amount of drinks each row has is not the same so the quantity in each persons drink may differ. 
 
+
+
 ## Inferential Tests
+
+
+
 
 ```{r}
 model1 <- aov(alcohol~Seat,data=davisdata)
 summary.aov(model1)
 ```
 
-
+This inferential test shows that the p-value is 0.000116, and this value shows the chances of getting the same results as the ones found in this study if the null hypothesis is actually true. Because the p-value is so small I will reject the null hypothesis.
 
 ## Conclusions
 
