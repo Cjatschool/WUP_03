@@ -30,7 +30,9 @@ basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 ```{r}
 basicCN + geom_boxplot()
 ```
-  
+ 
+ 
+The boxplot shows that people who drink more alcohol on average tend to sit in the back, while the people in the front or in the middle seats of the class tend to show less of a difference in drinking patterns.
   
 ### get fancy  
 
