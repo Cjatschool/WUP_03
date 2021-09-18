@@ -68,6 +68,20 @@ summary.aov(model1)
 
 This inferential test shows that the p-value is 0.000116, and this value shows the chances of getting the same results as the ones found in this study if the null hypothesis is actually true. Because the p-value is so small I will reject the null hypothesis.
 
+Now it has to be determined what is different from what.
+
+```{r}
+plot(TukeyHSD(model1))
+```
+
+
+
+
+According to the Tukey plot, there is no difference between the alcohol consumption in the middle and front rows. However, the plot does show that the alcohol consumption between the front-back rows and the middle-back are different.
+
+
 ## Conclusions
 
 
+
+In the conclusion of this statistical analysis, it was found that the anova model had to be utilized to determine the amount of drinks the class drinkers drank  based on which row they sat in class. based on the results of this chart, the back row of the class drinks 8.5 more dinks per week than the middle and front rows. The middle rows drank 3.3 drinks per week and the front row drank 1.7 drinks per week. It is likely that they are all drinking different amounts of alcohol per drink. The p- value of 0.000116 represents the chances of getting a similar result like the ones obtained in this study, if the null hypothesis is true. Since the p-value is so small, I will reject the null hypothesis. After that, the next step was to look into what was different from what. According to the results of the Tukey plot, there is no difference between the middle and front rows of the class, but the front-back and the middle-back rows were different.
